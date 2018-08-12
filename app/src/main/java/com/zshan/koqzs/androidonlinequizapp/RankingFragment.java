@@ -1,0 +1,36 @@
+package com.zshan.koqzs.androidonlinequizapp;
+
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class RankingFragment extends Fragment {
+    View myFragment;
+
+
+    public RankingFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        myFragment= inflater.inflate(R.layout.fragment_ranking, container, false);
+        return myFragment;
+
+    }
+
+    public static Fragment newInstance() {
+        return new RankingFragment();
+
+    }
+}
